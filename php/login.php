@@ -12,12 +12,13 @@ if (isset($_POST['submit'])) {
     // mysqli_connect() function opens a new connection to the MySQL server. 
     $conn = mysqli_connect("localhost", "root", "Braden3268", "TEC319"); 
     // SQL query to fetch information of registerd users and finds user match. 
-    $query = "SELECT username, password FROM login where username=? AND password=? LIMIT 1";
+    $query = "SELECT username, password FROM users WHERE username=? AND password=? LIMIT 1"; 
+    // To protect MySQL injection for Security purpose 
     $stmt = $conn->prepare($query); 
     $stmt->bind_param("ss", $username, $password); 
     $stmt->execute(); 
     $stmt->bind_result($username, $password); 
-    $stmt->store_result();  
+    $stmt->store_result(); 
     if($stmt->fetch()) //fetching the contents of the row { 
       $_SESSION['login_user'] = $username; // Initializing Session 
     header("location: content.php"); // Redirecting To Profile Page 

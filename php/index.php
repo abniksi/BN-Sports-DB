@@ -1,9 +1,10 @@
-<?php
-include('login.php'); // Includes Login Script
-if(isset($_SESSION['login_user'])){
-header("location: content.php"); // Redirecting To Profile Page
+<?php 
+    include('login.php'); // Includes Login Script
+    if(isset($_SESSION['login_user'])){
+    header("location: content.php"); // Redirecting to content
 }
 ?> 
+?>
 
 <!DOCTYPE html>
 <html>
