@@ -41,26 +41,3 @@ document.getElementById("searchBtn").addEventListener("click", () => {
         }
     });
 });
-
-/*<?php
-$error = ''; // Variable To Store Error Message 
-if (isset($_POST['submit'])) { 
-    // Define $username and $password 
-    $username = filter_input(INPUT_POST, 'username');
-    $password = filter_input(INPUT_POST, 'password');
-    $id = filter_input(INPUT_POST, 'id', FILTER_VALIDATE_INT);
-    // mysqli_connect() function opens a new connection to the MySQL server. 
-    $conn = mysqli_connect("localhost", "root", "Braden3268", "TEC319"); 
-    // SQL query to fetch information of registerd users and finds user match. 
-    $query = "INSERT INTO login (id, username, password) VALUES (:id, :username, :password)";
-    $statement = $conn->prepare($query); 
-    $statement->bindValue(':username', $username); 
-    $statement->bindValue(':password', $password); 
-    $statement->bindValue(':id', $id); 
-    $statement->execute();
-    $statement->closeCursor(); 
-    mysqli_close($conn); // Closing Connection 
-    include('index.php');
-}
-?>
-*/

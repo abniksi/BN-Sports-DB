@@ -5,7 +5,6 @@ if(!isset($_SESSION['login_user'])){
   header("location: index.php"); 
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +18,7 @@ if(!isset($_SESSION['login_user'])){
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="icon" 
       type="image/png" 
-      href="/..images/favicon.png">
+      href="../images/favicon.png">
 
     <title>BN Sports DB</title>
   </head>

@@ -9,13 +9,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Login Form in PHP with Session</title>
+        <title>BN Sports DB</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link href="../css/indexphp.css" rel="stylesheet" type="text/css">
         <link rel="icon" 
-        type="image/png" 
-        href="../images/favicon.png">
+      type="image/png" 
+      href="../images/favicon.png">
     </head>
     <body>
         <nav>
@@ -34,11 +34,21 @@
                 <input id="name" name="username" placeholder="Username" type="text"><br>
                 <label>Password :</label>
                 <input id="password" name="password" placeholder="Password" type="password"><br><br>
-                <a href="registration.php"><h4>No account? Sign Up Here!</h4></a>
+                <a href="register.php"><h4>No account? Sign Up Here!</h4></a>
                 <button name="submit" type="submit" value="Login">Login</button>
                 <span><?php echo $error; ?></span>
             </form>
             </div>
         </div>
+
+        <footer>
+            <ul>
+              <li><i class="fab fa-facebook"></i></li>
+              <li><i class="fab fa-instagram"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-snapchat"></i></li>
+              <li><i class="fab fa-youtube"></i></li>
+            </ul>
+          </footer>
     </body>
 </html>
