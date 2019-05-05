@@ -1,15 +1,22 @@
 <?php 
-    include('login.php'); // Includes Login Script
-    if(isset($_SESSION['login_user'])){
-    header("location: content.php"); // Redirecting to content
-}
+    //Including login.php
+    include('login.php');
+    //Login.php will only redirect user to content.php if login attempt is valid
+    if(isset($_SESSION['userLogin'])){
+        header("Location: content.php"); 
+    }
 ?> 
-?>
 
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Including required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="BN Sports DB allows you to look up and obtain information about professional athletes!">
+        <!-- Title of the web page -->
         <title>BN Sports DB</title>
+        <!-- Linkning up all of my stylesheets -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link href="../css/indexphp.css" rel="stylesheet" type="text/css">
@@ -17,7 +24,9 @@
       type="image/png" 
       href="../images/favicon.png">
     </head>
+    <!-- Start of body -->
     <body>
+        <!-- Start of navbar -->
         <nav>
             <ul>
                 <a href="../index.html"><li class="left">BN Sports DB<i class="fas fa-trophy"></i></li></a>
@@ -26,6 +35,7 @@
             </ul>
         </nav>
 
+        <!-- Start of centerContainer. Contains the form in which users can sign into. -->
         <div id="centerContainer">
             <div id="container">
                 <h2>Log Into Your Account!</h2>
@@ -41,6 +51,7 @@
             </div>
         </div>
 
+        <!-- Start of footer -->
         <footer>
             <ul>
               <li><i class="fab fa-facebook"></i></li>

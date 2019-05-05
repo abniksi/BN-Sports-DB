@@ -1,9 +1,12 @@
+/* Importing a Google font */
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
+/* Setting margin for entire page */
 *{
     margin: 0 auto;
 }
 
+/* Setting background image and font height for the body */
 body{
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url(https://images.unsplash.com/photo-1542446655-53a7e25c8fe2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1195&q=80);
     -webkit-background-size: cover;
@@ -16,6 +19,7 @@ body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* Styling the form. Adding display flex. */
 form{
     display: flex;
     justify-content: center;
@@ -25,14 +29,17 @@ form{
     color: white;
 }
 
-.input-group{
+/* Adding margin */
+.formInputs{
     margin: 10px;
 }
 
+/* Display block for the labels */
 label{
     display: block;
 }
 
+/* Button styling */
 button{
     background: black;
     border: 1px solid white;
@@ -44,16 +51,19 @@ button{
     cursor: pointer;
 }
 
+/* Inputs height, width, and no borders */
 input{
     height: 30px;
     width: 200px;
     border: none;
 }
 
+/* H2 font */
 h2{
     font-family: 'Righteous', cursive;
 }
 
+/* Styling navbar and a element */
 nav{
     color: white;
     margin: 0 auto;
@@ -71,7 +81,7 @@ nav{
     padding-top: 20px;
   }
   
-  
+  /* Floting specific navbar elements left or right */
   .right{
     float: right;
     margin-right: 40px;
@@ -92,11 +102,8 @@ nav{
     display: inline-block;
   }
 
-.fas{
-    color: gold;
-    margin-left: 10px;
-}
 
+/* Styling the footer and fixing the icons color and font size. */
 footer{
     color: white;
     position: absolute;
@@ -113,3 +120,8 @@ footer{
   .fab:hover{
     transform: scale(1.3);
   }
+
+  .fas{
+    color: gold;
+    margin-left: 10px;
+}

@@ -1,3 +1,4 @@
+/* Importing a google font */
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
 /* Setting margins for entire page */
@@ -5,6 +6,7 @@
     margin: 0 auto;
 }
 
+/* Getting rid of all the overflow and adding a background color */
 body{
     overflow-x: hidden;
     background: #FFFAF0;
@@ -22,7 +24,7 @@ header{
     background-position: center;
 }
 
-/*  */
+/* Setting height and adding display flex to section */
 section{
   height: 90%;
   color: white;
@@ -31,6 +33,7 @@ section{
   align-items: center;
 }
 
+/* Adding all stylings to navbar and a element */
 nav{
     color: white;
     margin: 0 auto;
@@ -61,12 +64,14 @@ nav{
     cursor: pointer;
   }
   
+  /* Footer styling */
   footer{
     color: white;
     position: absolute;
     bottom: 10px;
   }
   
+  /* Changing color and font size for icons you see on the page. */
   .fab{
     margin: 10px;
     font-size: 22px;
@@ -91,6 +96,7 @@ nav{
     display: inline-block;
   }
 
+  /* Adding font and setting width for information ID */
 #information{
     width: 80%;
 }
@@ -99,6 +105,7 @@ nav{
     font-family: 'Righteous', cursive;
 }
 
+/* All the images on page take up the entire container they occupy */
 img{
     height: 100%;
     width: 100%;
@@ -116,6 +123,7 @@ input{
    height: 40px;
 }
 
+/* Setting styling for the button */
 button{
     background: black;
     border: 1px solid white;
@@ -136,6 +144,7 @@ button:hover{
     text-align: center;
 }
 
+/* Overflow text is hidden from view */
 #results{
     overflow: hidden;
 }
@@ -145,6 +154,7 @@ h4{
     font-style: italic;
 }
 
+/* Setting all of the styles for the player containers that appear after a search. */
 .playerContainer{
     border: 2px solid black;
     height: 1000px;
@@ -160,6 +170,7 @@ h4{
     box-shadow: 0px 0px 10px 0px black;
 }
 
+/* The text that display the number of results we recieve back from the JSON */
 .numberOfResults{
     text-align: center;
     font-size: 40px;

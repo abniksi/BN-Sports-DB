@@ -1,6 +1,8 @@
 <?php
 session_start(); 
-if(session_destroy()){ // Destroying All Sessions { 
-  header("Location: index.php"); // Redirecting To Home Page 
+//Once user clicks on logout button, they are redirected here for a split second.
+//This will destroy the current session and redirect the user back to index.php
+if(session_destroy()) {
+  header("Location: index.php");
 }
 ?>

@@ -1,3 +1,4 @@
+/* Importing a Google font */
 @import url('https://fonts.googleapis.com/css?family=Righteous');
 
 /* Setting margins for entire page */
@@ -17,7 +18,7 @@ header{
     background-position: center;
 }
 
-/*  */
+/* Adding display flex to section */
 section{
   color: white;
   height: 80%;
@@ -26,6 +27,7 @@ section{
   align-items: center;
 }
 
+/* Navbar stylings */
 nav{
   color: white;
   margin: 0 auto;
@@ -56,12 +58,14 @@ ul{
   cursor: pointer;
 }
 
+/* Footer basic styling */
 footer{
   color: white;
   position: absolute;
   bottom: 10px;
 }
 
+/* Adding colors and font sizes to all the icons on the page */
 .fab{
   margin: 10px;
   font-size: 22px;
@@ -86,6 +90,7 @@ li{
   display: inline-block;
 }
 
+/* Information ID. Adding a new font and width. */
 #information{
   width: 80%;
 }
@@ -94,6 +99,7 @@ li{
   font-family: 'Righteous', cursive;
 }
 
+/* Setting colors, border, transition for the button */
 button{
   background: black;
   border: 1px solid white;
