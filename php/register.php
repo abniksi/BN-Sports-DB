@@ -32,23 +32,23 @@
     <!-- Start of form. Method is post and we are sending the data gathered to register.php -->
     <form method="post" action="register.php">
         <h2>Register</h2>
-  	    <div class="formInputs">
+  	    <div class="container">
   	        <label>Username:</label>
   	        <input type="text" name="username">
   	    </div>
-  	    <div class="formInputs">
+  	    <div class="container">
   	        <label>Email:</label>
   	        <input type="email" name="email">
   	    </div>
-  	    <div class="formInputs">
+  	    <div class="container">
   	        <label>Password:</label>
   	        <input type="password" name="password1">
   	    </div>
-  	    <div class="formInputs">
+  	    <div class="container">
   	        <label>Confirm Password:</label>
   	        <input type="password" name="passwordCheck">
   	    </div>
-  	    <div class="formInputs">
+  	    <div class="container">
   	        <button type="submit" class="btn" name="userRegistration">Register</button>
         </div>
     <!-- Redirects you to index.php to sign in -->

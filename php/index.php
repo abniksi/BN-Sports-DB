@@ -46,7 +46,6 @@
                 <input id="password" name="password" placeholder="Password" type="password"><br><br>
                 <a href="register.php"><h4>No account? Sign Up Here!</h4></a>
                 <button name="submit" type="submit" value="Login">Login</button>
-                <span><?php echo $error; ?></span>
             </form>
             </div>
         </div>
